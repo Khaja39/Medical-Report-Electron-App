@@ -24,7 +24,7 @@ A desktop-based laboratory reporting and diagnostic management system built with
     Metadata Auto-Timestamping: One-click and automatic ISO string time-stamping for sample collection and final report generation times.
 
 🛠️ Project Architecture
-Plaintext
+```text
 
 medical-report/
 ├── assets/
@@ -43,7 +43,7 @@ medical-report/
 ├── main.js                 # Electron main process & IPC handlers
 ├── preload.js              # Context-isolation bridge
 └── package.json            # Project config, metadata, and electron-builder setup
-
+```text
 📦 Installation & Setup
 
 Ensure you have Node.js (v18+ recommended) installed on your system.
