@@ -44,6 +44,7 @@ medical-report/
 ├── preload.js              # Context-isolation bridge
 └── package.json            # Project config, metadata, and electron-builder setup
 ```text
+Plaintext
 📦 Installation & Setup
 
 Ensure you have Node.js (v18+ recommended) installed on your system.
