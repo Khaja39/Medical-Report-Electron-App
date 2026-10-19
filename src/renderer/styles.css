@@ -1,0 +1,573 @@
+/* --- BRAND COLOR PALETTE ---
+   Primary Orange: #f58220
+   Secondary Purple: #6f328f
+   Background Light: #f2f5f7
+-------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f5f7;
+  color: #333;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.container {
+  width: 780px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* --- LETTERHEAD HEADER LAYOUT --- */
+
+.hospital-letterhead {
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #5b21b6;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+}
+
+.header-top-row {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  width: 100%;
+}
+
+.header-col-left {
+  width: 130px;
+  flex-shrink: 0;
+}
+
+.brand-logo {
+  max-width: 120px;
+  height: auto;
+  display: block;
+}
+
+.header-col-center {
+  flex-grow: 1;
+  text-align: center;
+  padding: 25px 10px 0 10px;
+}
+
+.hospital-title-telugu {
+  font-size: 35px;
+  font-weight: 900;
+  color: #ea580c;
+  margin: 12px 0 4px 0;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.hospital-address {
+  font-size: 12px;
+  font-weight: 700;
+  color: #5b21b6;
+  margin: 8px 0;
+  line-height: 1.2;
+}
+
+.header-col-right {
+  width: 200px;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 15px;
+}
+
+.phone-number {
+  font-size: 13px;
+  font-weight: 800;
+  color: #5b21b6;
+  margin: 0;
+  white-space: nowrap;
+  padding-right: 30px;
+}
+
+.header-bottom-row {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.doc-box {
+  line-height: 1.25;
+}
+
+.doc-box-left {
+  text-align: left;
+}
+
+.doc-box-right {
+  text-align: right;
+}
+
+.doc-name-orange {
+  font-size: 15px;
+  font-weight: 900;
+  color: #ea580c;
+  margin: 0 0 2px 0;
+}
+
+.doc-detail-purple {
+  font-size: 11px;
+  font-weight: 700;
+  color: #5b21b6;
+  margin: 1px 0;
+}
+
+/* Report Title Bar */
+.report-title-bar {
+  background: #6f328f;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* --- FORM & INPUT LAYOUT --- */
+
+.card {
+  background: #fafafa;
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: visible !important;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 28px;
+  row-gap: 16px;
+  align-items: start;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #4a5568;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #ffffff;
+  transition: border-color 0.2s;
+  font-weight: 400;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #f58220;
+}
+
+/* Quick-Set "Now" Button Container */
+.date-input-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-now {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #6f328f;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+.btn-now:hover {
+  background-color: #5b21b6;
+}
+
+/* --- CLEAR BUTTON & INPUT WRAPPERS --- */
+
+.input-with-clear {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+  padding: 2px 5px;
+  line-height: 1;
+  border-radius: 50%;
+  transition: color 0.2s, background 0.2s;
+  z-index: 10;
+}
+
+.btn-clear:hover {
+  color: #e53935;
+  background-color: #f0f0f0;
+}
+
+.input-with-clear input[type="text"] {
+  padding-right: 32px;
+}
+
+/* --- NATIVE SELECT DROPDOWN FIX (Gender, Ref By) --- */
+
+.input-with-clear select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  width: 100%;
+  padding-right: 50px !important;
+  background-color: #ffffff;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%234a5568" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') !important;
+  background-repeat: no-repeat !important;
+  background-position: right 8px center !important;
+  background-size: 20px !important;
+  cursor: pointer;
+}
+
+.input-with-clear select + .btn-clear {
+  right: 28px !important; /* Positions 'x' clear button to the left of arrow */
+  z-index: 5;
+}
+
+/* Datetime-Local Fields */
+.input-with-clear input[type="datetime-local"] {
+  padding-right: 55px !important;
+}
+
+.btn-clear-date {
+  right: 32px !important;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  padding-left: 4px;
+}
+
+/* --- SEARCHABLE INPUT FIELD (Select Investigation / Panel) --- */
+
+.position-relative {
+  position: relative;
+}
+
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#testSearchInput {
+  padding-right: 52px !important;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%236f328f" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') !important;
+  background-repeat: no-repeat !important;
+  background-position: right 8px center !important;
+  background-size: 20px !important;
+  cursor: pointer;
+}
+
+#testSearchInput:focus {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23f58220" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 14l5-5 5 5z"/></svg>') !important;
+}
+
+.custom-select-wrapper .btn-clear {
+  right: 28px !important;
+  z-index: 5;
+}
+
+/* --- CUSTOM SEARCH DROPDOWN MENU LIST --- */
+
+.dropdown-menu-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  max-height: 220px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+  z-index: 9999 !important;
+  padding: 4px 0;
+}
+
+.dropdown-menu-list.hidden {
+  display: none !important;
+}
+
+.dropdown-item {
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #2d3748;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown-item:hover {
+  background-color: #f58220;
+  color: #ffffff;
+}
+
+.dropdown-item-no-results {
+  padding: 12px 14px;
+  font-size: 13px;
+  color: #a0aec0;
+  font-style: italic;
+  text-align: center;
+}
+
+.dropdown-menu-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-menu-list::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+}
+
+/* --- DIAGNOSTIC TEST TABLE LAYOUT --- */
+
+.test-table-container {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.test-table-header {
+  display: grid;
+  grid-template-columns: 2.2fr 1.5fr 1fr 1.8fr;
+  gap: 12px;
+  background: #f58220;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-weight: 700;
+  font-size: 13px;
+  align-items: center;
+}
+
+.test-row {
+  display: grid;
+  grid-template-columns: 2.2fr 1.5fr 1fr 1.8fr;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #edf2f7;
+  background: #ffffff;
+}
+
+.test-row:nth-child(even) {
+  background: #f8fafc;
+}
+
+.param-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: #2d3748;
+}
+
+.param-input input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 10px;
+  font-weight: 400;
+  color: #1a202c;
+}
+
+/* ABNORMAL RESULT HIGHLIGHTING */
+.param-input input.abnormal-result,
+input.abnormal-result {
+  background-color: #fff5f5 !important;
+  color: #000000 !important;
+  border-color: #cbd5e0 !important;
+  font-weight: 900 !important;
+}
+
+.param-unit {
+  font-size: 12px;
+  color: #718096;
+}
+
+.param-range {
+  font-size: 12px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+/* --- ACTION BUTTONS --- */
+
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+button {
+  flex: 1;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-primary {
+  background-color: #f58220;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #6f328f;
+  color: #ffffff;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.hidden-field {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* --- PRINT & PDF EXPORT STYLES --- */
+
+/* --- PRINT & PDF EXPORT STYLES --- */
+
+/* --- PRINT & PDF EXPORT STYLES --- */
+
+@media print {
+  *, html, body, input, select, button, div {
+    cursor: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .container {
+    width: 100% !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  /* Hide interactive elements and popups entirely on paper */
+  .actions,
+  .dropdown-menu-list,
+  #testDropdownMenu,
+  .btn-now,
+  .btn-clear,
+  .btn-clear-date {
+    display: none !important;
+  }
+
+  input, textarea, [contenteditable="true"] {
+    caret-color: transparent !important;
+  }
+
+  /* 
+     1. Direct Tag Overrides
+  */
+  input, 
+  input[type="text"], 
+  input[type="number"], 
+  input[type="datetime-local"], 
+  select, 
+  #testSearchInput {
+    font-weight: 400 !important;
+    border: none !important;
+    border-bottom: 1px solid #6f328f !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    background-image: none !important; 
+    -webkit-appearance: none !important; 
+    -moz-appearance: none !important;
+    appearance: none !important;
+    padding: 2px 0 !important;
+    color: #000000 !important;  
+  }
+
+  /* 
+     2. Specificity Fix for Gender & Referred By:
+     Explicitly targets .input-with-clear select to beat the screen !important rule
+  */
+  .input-with-clear select {
+    background: transparent !important;
+    background-image: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    padding-right: 0 !important;
+  }
+
+  .param-input input.abnormal-result,
+  input.abnormal-result {
+    font-weight: 900 !important;
+    color: #000000 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    /* -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important; */
+  }
+  
+  .card {
+    background: #ffffff !important;
+    border: 1px solid #cbd5e0 !important;
+  }
+
+  /* Optional: Keep these only if you want to hide the entire form row on paper */
+  .gender-field, .referred-by-field {
+    display: none !important;
+  }
+}

@@ -1,0 +1,87 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime files
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+out/
+release/
+
+# Electron Builder
+dist_electron/
+*.blockmap
+*.exe
+*.dmg
+*.AppImage
+*.deb
+*.rpm
+*.snap
+*.zip
+*.tar.gz
+
+# Cache
+.cache/
+.eslintcache
+.parcel-cache/
+.vite/
+.npm/
+.yarn/
+.pnp.*
+.nyc_output/
+
+# Coverage
+coverage/
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# TypeScript
+*.tsbuildinfo
+
+# Electron Forge
+out/
+
+# Electron React Boilerplate
+release/app/
+
+# Local database (optional)
+*.sqlite
+*.sqlite3
+
+# Certificates (optional)
+*.pem
+*.key

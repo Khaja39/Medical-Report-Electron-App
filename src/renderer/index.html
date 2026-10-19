@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aroma Kids Care Hospital - Medical Report</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Hospital Header -->
+    <header class="hospital-letterhead">
+      <div class="header-top-row">
+        <div class="header-col-left">
+          <img src="../../assets/Aroma-logo.png" alt="Logo" class="brand-logo" onerror="this.style.display='none';">
+        </div>
+
+        <div class="header-col-center">
+          <h1 class="hospital-title-telugu">Aroma Kids Care Hospital</h1>
+          <p class="hospital-address">Opposite to HP Petrol Pump,</p>
+          <p class="hospital-address">DLF Road, Gacchibowli, Hyderabad.</p>
+          <p class="hospital-address">Ph: +91 9898 989 354</p>
+        </div>
+
+        <div class="header-col-right">
+          <p class="phone-number"></p>
+        </div>
+      </div>
+
+      <div class="header-bottom-row">
+        <div class="doc-box doc-box-left">
+          <h3 class="doc-name-orange">Dr. S. Khaja Moinuddin</h3>
+          <p class="doc-detail-purple">MBBS, DNB (PAEDIATRICS)</p>
+          <p class="doc-detail-purple">Child Care Specialist</p>
+          <p class="doc-detail-purple">Reg No: APMC/FMR/78364</p>
+        </div>
+
+        <div class="doc-box doc-box-left">
+          <h3 class="doc-name-orange">Dr. S. Khaja Moinuddin</h3>
+          <p class="doc-detail-purple">MBBS, DNB (PAEDIATRICS)</p>
+          <p class="doc-detail-purple">Child Care Specialist</p>
+          <p class="doc-detail-purple">Reg No: APMC/FMR/78364</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="report-title-bar">
+      <span>LABORATORY DIAGNOSTIC REPORT</span>
+    </div>
+
+    <!-- Patient Information Box -->
+    <section class="card patient-info-card">
+      <div class="form-grid">
+
+        <!-- Patient Name -->
+        <div class="form-group">
+          <label for="patientName">Patient Name</label>
+          <div class="input-with-clear">
+            <input type="text" id="patientName" placeholder="Full Name">
+            <button type="button" class="btn-clear" data-target="patientName" title="Clear field">&times;</button>
+          </div>
+        </div>
+
+        <!-- Age -->
+        <div class="form-group">
+          <label for="patientAge">Age</label>
+          <div class="input-with-clear">
+            <input type="text" id="patientAge" name="patientAge" placeholder="e.g. 25" inputmode="numeric"
+              pattern="[0-9]*" maxlength="3">
+            <button type="button" class="btn-clear" data-target="patientAge" title="Clear field">&times;</button>
+          </div>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <div class="input-with-clear">
+            <select id="gender">
+              <option value="">-- Select --</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+            <button type="button" class="btn-clear" data-target="gender" title="Clear field">&times;</button>
+          </div>
+        </div>
+
+        <!-- Referred By -->
+        <div class="form-group">
+          <label for="refBy">Referred By Dr.</label>
+          <div class="input-with-clear">
+            <select id="refBy" class="focusable-input">
+              <option value="">-- Select Doctor --</option>
+              <option value="Dr. Shaik Khaja Moinuddin">Dr. Shaik Khaja Moinuddin</option>
+            </select>
+            <button type="button" class="btn-clear" data-target="refBy" title="Clear field">&times;</button>
+          </div>
+        </div>
+
+        <!-- Sample Collected Date -->
+        <div class="form-group">
+          <label for="sampleCollectedDate">Sample Collected Date & Time</label>
+          <div class="date-input-group">
+            <div class="input-with-clear">
+              <input type="datetime-local" id="sampleCollectedDate" name="sampleCollectedDate">
+              <button type="button" class="btn-clear btn-clear-date" data-target="sampleCollectedDate"
+                title="Clear date">&times;</button>
+            </div>
+            <button type="button" class="btn-now" id="btnNowSample">Now</button>
+          </div>
+        </div>
+
+        <!-- Report Date -->
+        <div class="form-group">
+          <label for="reportDate">Report Date & Time</label>
+          <div class="date-input-group">
+            <div class="input-with-clear">
+              <input type="datetime-local" id="reportDate" name="reportDate">
+              <button type="button" class="btn-clear btn-clear-date" data-target="reportDate"
+                title="Clear date">&times;</button>
+            </div>
+            <button type="button" class="btn-now" id="btnNowReport">Now</button>
+          </div>
+        </div>
+
+        <!-- Investigation / Panel Search -->
+        <div class="form-group full-width position-relative">
+          <label for="testSearchInput">Select Investigation / Panel</label>
+          <div class="custom-select-wrapper input-with-clear">
+            <input type="text" id="testSearchInput" placeholder="Type to search test (e.g. CBC, Lipid, Urine)..."
+              autocomplete="off">
+            <button type="button" class="btn-clear" data-target="testSearchInput"
+              title="Clear search">&times;</button>
+            <div id="testDropdownMenu" class="dropdown-menu-list hidden">
+              <!-- Options filtered dynamically by JavaScript -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Dynamic Test Parameters Area -->
+    <section id="testFields" class="card-section"></section>
+
+    <!-- Action Controls -->
+    <div class="actions">
+      <button id="downloadPDF" class="btn-primary">Download PDF (Enter)</button>
+      <button id="printReport" class="btn-secondary">Print Report (Shift + Enter)</button>
+    </div>
+
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
